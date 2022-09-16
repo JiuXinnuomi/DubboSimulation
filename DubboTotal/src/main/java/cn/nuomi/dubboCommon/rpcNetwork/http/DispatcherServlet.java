@@ -1,4 +1,4 @@
-package cn.nuomi.dubboCommon.providerIo.rpcNetwork.http;
+package cn.nuomi.dubboCommon.rpcNetwork.http;
 
 
 import javax.servlet.ServletException;
@@ -12,7 +12,8 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        //req处理提供者端服务器接收的请求
-        ServletHander
+        //req处理提供者端服务器接收的请求,可以在Servlet中实现过滤器链,处理链
+        new ServletHandler().handle(req,resp);
+
     }
 }

@@ -1,4 +1,4 @@
-package cn.nuomi.dubboCommon.providerIo.rpcNetwork.http;
+package cn.nuomi.dubboCommon.rpcNetwork.http;
 
 import org.apache.catalina.*;
 import org.apache.catalina.connector.Connector;
