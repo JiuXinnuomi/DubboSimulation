@@ -22,7 +22,7 @@ public class ServletHandler {
             //使用与消费者相同的序列化协议。将传输的信息流转换成对象
             Invocation invocation = (Invocation) new ObjectInputStream(req.getInputStream()).readObject();
 
-            Class classImpl = LocalRegister.get(invocation.getInterfaceName()+"@"+ invocation);
+            Class classImpl = LocalRegister.get(invocation.getInterfaceName()+"@"+ invocation.getVerison());
 
             Method method = classImpl.getMethod(invocation.getMethodName(), invocation.getParamType());
 
