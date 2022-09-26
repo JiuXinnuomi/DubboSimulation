@@ -25,6 +25,8 @@ public class RemoteRegister {
         return REGISTER.get(interfaceName);
     }
 
+    //TODO 监听提供者在线情况，自动取消注册，心跳机制刷新Map存储
+
     //    public static void regist(String interfaceName, List<String> urlList) {
 //        List<String> list = map.get(interfaceName);
 //        if (ObjectUtils.isEmpty(list)){
