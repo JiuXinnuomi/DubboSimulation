@@ -1,6 +1,6 @@
 package cn.nuomi.consumer;
 
-import cn.nuomi.dubboCommon.ProxyFactory;
+import cn.nuomi.dubboCommon.common.ProxyFactory;
 import cn.nuomi.dubboService.api.UserService;
 
 public class Consumer {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import cn.nuomi.dubboCommon.URL;
+import cn.nuomi.dubboCommon.common.URL;
 import org.springframework.util.ObjectUtils;
 
 public class RemoteRegister {

@@ -1,6 +1,6 @@
 package cn.nuomi.dubboCommon.rpcNetwork.http;
 
-import cn.nuomi.dubboCommon.Invocation;
+import cn.nuomi.dubboCommon.common.Invocation;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;

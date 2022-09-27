@@ -1,4 +1,4 @@
-package cn.nuomi.dubboCommon;
+package cn.nuomi.dubboCommon.common;
 
 import java.io.Serializable;
 

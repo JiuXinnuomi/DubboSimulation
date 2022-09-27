@@ -1,7 +1,7 @@
 package cn.nuomi.dubboCommon.rpcNetwork.http;
 
-import cn.nuomi.dubboCommon.Invocation;
-import cn.nuomi.dubboCommon.LocalRegister;
+import cn.nuomi.dubboCommon.common.Invocation;
+import cn.nuomi.dubboCommon.common.LocalRegister;
 import org.apache.commons.io.IOUtils;
 
 import javax.servlet.http.HttpServletRequest;
@@ -11,7 +11,7 @@ import java.io.ObjectInputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class ServletHandler {
+public class HttpServletHandler {
 
     public void handle(HttpServletRequest req, HttpServletResponse resp){
 
@@ -27,6 +27,7 @@ public class ServletHandler {
             Method method = classImpl.getMethod(invocation.getMethodName(), invocation.getParamType());
 
             String result = (String) method.invoke(classImpl.newInstance(), invocation.getParams());
+
 
             //将结果通过resp返回给消费者请求端
             IOUtils.write(result, resp.getOutputStream());
